@@ -1,5 +1,4 @@
 <template>
-  <h1>Vue 3</h1>
   <div class="container">
     <PostCard
       v-for="cat in cats"
@@ -41,13 +40,16 @@ export default {
 </script>
 
 <style>
+body {
+  background: #ecf0f3;
+}
 .container {
-  height: 800px;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-content: space-around;
   flex-wrap: wrap;
-  padding: 20px 100px;
+  padding: 30px 0px;
 }
 </style>
