@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <PostCard
+    <Card
       v-for="cat in cats"
       :id="cat.id"
       :name="cat.username"
@@ -13,11 +13,11 @@
 
 <script>
 import { ref } from "vue";
-import PostCard from "./components/PostCard";
+import Card from "./components/Card";
 
 export default {
   name: "App",
-  components: { PostCard },
+  components: { Card },
   data() {
     return {};
   },

@@ -15,6 +15,7 @@
 import { computed } from "vue";
 
 export default {
+  name: "Card",
   props: {
     id: String,
     name: String,
