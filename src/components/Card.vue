@@ -53,7 +53,4 @@ div {
     6px 6px 10px rgba(0, 0, 0, 0.2);
   color: #6f6cde;
 }
-p {
-  word-wrap: normal;
-}
 </style>
