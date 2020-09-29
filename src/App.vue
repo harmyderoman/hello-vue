@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import Card from "./components/Card";
 
 export default {
@@ -28,13 +28,10 @@ export default {
         "https://jsonplaceholder.typicode.com/users"
       ).then((response) => response.json());
     };
+    onMounted(fetchCats);
     return {
       cats,
-      fetchCats,
     };
-  },
-  mounted() {
-    this.fetchCats();
   },
 };
 </script>

@@ -26,19 +26,11 @@ export default {
     const imgUrl = computed(
       () => `https://robohash.org/${props.id}?set=set4&size=180x180`
     );
-    const catName = computed(() => props.name.replace(/[_.-]/gi, " "));
+    const catName = computed(() => props.name.replace(/[_.-]/g, " "));
     return {
       imgUrl,
       catName,
     };
-  },
-  computed: {
-    //   imgUrl() {
-    //     return `https://robohash.org/${this.id}?set=set4&size=180x180`;
-    //   },
-    // catName() {
-    //   return this.name.replace(/[_.-]/gi, " ");
-    // },
   },
 };
 </script>
